@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f5f7fb">
+  <meta name="description" content="Giới thiệu Trợ lý tổng hợp học tập: tóm tắt bài giảng, phân tích đề và hỗ trợ lời giải có đối chiếu.">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'none'; form-action 'none'; object-src 'none'; base-uri 'none'">
+  <title>Trợ lý tổng hợp học tập — Demo mô phỏng</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="demo.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Trợ lý tổng hợp học tập">
+      <span class="brand-mark" aria-hidden="true">H</span>
+      <span class="brand-copy"><strong>HỌC GỌN</strong><small>TRỢ LÝ HỌC TẬP</small></span>
+    </a>
+    <nav class="main-nav" aria-label="Điều hướng chính">
+      <a href="#nang-luc">Năng lực</a>
+      <a href="#quy-trinh">Quy trình</a>
+      <a href="#ranh-gioi">Nguyên tắc</a>
+    </nav>
+    <a class="header-cta" href="#demo">Xem demo <span aria-hidden="true">↗</span></a>
+  </header>
+
+  <main id="top">
+    <section class="hero section-shell">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="eyebrow-dot"></span> TRỢ LÝ TỔNG HỢP HỌC TẬP</div>
+        <h1>Nghe bài giảng.<br><em>Hiểu trọng tâm.</em><br>Làm bài có căn cứ.</h1>
+        <p class="hero-lede">Biến âm thanh bài giảng và tài liệu môn học thành bản tổng hợp rõ ràng, lời giải từng bước và danh sách việc cần làm.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#demo">Khám phá bản demo <span aria-hidden="true">↓</span></a>
+          <a class="text-link" href="#quy-trinh">Xem cách hoạt động <span aria-hidden="true">→</span></a>
+        </div>
+        <div class="trust-note"><span class="lock-icon" aria-hidden="true">◈</span><span>Chỉ là demo tĩnh. Không kết nối Agent thật, API hay tài liệu cá nhân.</span></div>
+      </div>
+
+      <div class="demo-window" id="demo" aria-label="Bản demo mô phỏng">
+        <div class="window-top">
+          <div class="window-dots" aria-hidden="true"><i></i><i></i><i></i></div>
+          <span class="window-title">BẢN XEM TRƯỚC</span>
+          <span class="mock-badge"><span></span> MÔ PHỎNG</span>
+        </div>
+        <div class="demo-content">
+          <div class="demo-intro">
+            <div class="agent-avatar" aria-hidden="true">H</div>
+            <div><strong>Trợ lý tổng hợp học tập</strong><small>Ví dụ dựng sẵn · không xử lý tệp</small></div>
+          </div>
+          <div class="message user-message">
+            <span class="message-label">YÊU CẦU MẪU</span>
+            <p>Hãy tóm tắt bài giảng, phân tích đề và chỉ ra những việc cần hoàn thành.</p>
+          </div>
+          <div class="source-row" aria-label="Nguồn minh họa">
+            <span class="source-chip"><span class="file-icon audio-icon" aria-hidden="true">♫</span> Bài giảng mẫu <small>28:12</small></span>
+            <span class="source-chip"><span class="file-icon pdf-icon" aria-hidden="true">PDF</span> Tài liệu mẫu <small>14 trang</small></span>
+          </div>
+          <div class="response-heading"><span class="response-spark" aria-hidden="true">✳</span><strong>Bản tổng hợp xem trước</strong><span class="source-verified">2 nguồn mẫu</span></div>
+          <div class="demo-tabs" role="tablist" aria-label="Nội dung bản demo">
+            <button class="demo-tab is-active" id="tab-summary" type="button" role="tab" aria-selected="true" aria-controls="demo-panel" data-view="summary">Tóm tắt</button>
+            <button class="demo-tab" id="tab-assignment" type="button" role="tab" aria-selected="false" aria-controls="demo-panel" data-view="assignment">Bài tập</button>
+            <button class="demo-tab" id="tab-review" type="button" role="tab" aria-selected="false" aria-controls="demo-panel" data-view="review">Kiểm tra</button>
+          </div>
+          <div class="demo-panel" id="demo-panel" role="tabpanel" aria-labelledby="tab-summary" tabindex="0">
+            <div class="panel-kicker">Ý CHÍNH · 04:18–09:42</div>
+            <p class="panel-title">Một câu hỏi nghiên cứu tốt cần rõ phạm vi và có thể kiểm chứng.</p>
+            <p class="panel-copy">Bản demo cho thấy cách Agent nối ý từ bài giảng với nội dung tài liệu, đồng thời giữ mốc thời gian để bạn tìm lại đoạn gốc.</p>
+            <div class="panel-foot"><span class="check-mark" aria-hidden="true">✓</span> Có nguồn và mốc thời gian minh họa</div>
+          </div>
+          <div class="demo-safety"><span aria-hidden="true">ⓘ</span> Nội dung ví dụ được dựng sẵn; nút bấm chỉ đổi phần hiển thị trên trang.</div>
+        </div>
+      </div>
+      <div class="hero-glow" aria-hidden="true"></div>
+    </section>
+
+    <section class="proof-strip" aria-label="Tóm tắt cách làm việc">
+      <div><span class="proof-number">01</span><span>Nghe & đọc</span></div>
+      <span class="proof-arrow" aria-hidden="true">→</span>
+      <div><span class="proof-number">02</span><span>Đối chiếu nguồn</span></div>
+      <span class="proof-arrow" aria-hidden="true">→</span>
+      <div><span class="proof-number">03</span><span>Giải từng bước</span></div>
+      <span class="proof-arrow" aria-hidden="true">→</span>
+      <div><span class="proof-number">04</span><span>Bạn duyệt trước</span></div>
+    </section>
+
+    <section class="section section-shell" id="nang-luc">
+      <div class="section-heading">
+        <div>
+          <div class="eyebrow">AGENT CÓ THỂ HỖ TRỢ GÌ</div>
+          <h2>Từ tư liệu rời rạc<br><em>đến kế hoạch rõ ràng.</em></h2>
+        </div>
+        <p class="section-aside">Tập trung vào học tập: nắm ý chính, hiểu yêu cầu và biết bước tiếp theo.</p>
+      </div>
+      <div class="capability-grid">
+        <article class="capability-card card-blue">
+          <div class="card-icon" aria-hidden="true">◖</div>
+          <span class="card-index">01 / NGHE</span>
+          <h3>Tóm tắt bài giảng</h3>
+          <p>Rút ý chính từ âm thanh và gắn mốc thời gian cho nội dung quan trọng.</p>
+          <div class="card-line"><span></span></div>
+        </article>
+        <article class="capability-card card-lilac">
+          <div class="card-icon" aria-hidden="true">▤</div>
+          <span class="card-index">02 / ĐỌC</span>
+          <h3>Phân tích tài liệu</h3>
+          <p>Tách kiến thức cốt lõi khỏi ví dụ minh họa, bài tập và yêu cầu nộp.</p>
+          <div class="card-line"><span></span></div>
+        </article>
+        <article class="capability-card card-mint">
+          <div class="card-icon" aria-hidden="true">↗</div>
+          <span class="card-index">03 / GIẢI</span>
+          <h3>Hướng dẫn từng bước</h3>
+          <p>Giải thích đơn giản, dựa trên kiến thức đã học và chỉ rõ bước kiểm tra.</p>
+          <div class="card-line"><span></span></div>
+        </article>
+        <article class="capability-card card-peach">
+          <div class="card-icon" aria-hidden="true">▣</div>
+          <span class="card-index">04 / TỔNG HỢP</span>
+          <h3>Soạn bản Word</h3>
+          <p>Gom tóm tắt, lời giải, việc cần làm và deadline để bạn xem lại.</p>
+          <div class="card-line"><span></span></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="workflow-section" id="quy-trinh">
+      <div class="section-shell workflow-inner">
+        <div class="workflow-heading">
+          <div class="eyebrow eyebrow-light">CÁCH AGENT LÀM VIỆC</div>
+          <h2>Rõ nguồn.<br><em>Rõ từng bước.</em></h2>
+          <p>Agent phân tích phần đủ căn cứ, đánh dấu phần chưa chắc và để bạn quyết định trước khi lưu.</p>
+          <a class="light-link" href="#ranh-gioi">Xem các nguyên tắc an toàn <span aria-hidden="true">→</span></a>
+        </div>
+        <div class="workflow-list">
+          <article class="workflow-step">
+            <span class="step-no">01</span><div><h3>Nhận âm thanh và PDF</h3><p>Xác định môn học, nguồn và khả năng đọc/nghe của tài liệu.</p></div><span class="step-status">ĐẦU VÀO</span>
+          </article>
+          <article class="workflow-step">
+            <span class="step-no">02</span><div><h3>Tóm tắt và phân loại</h3><p>Gắn mốc thời gian; tách kiến thức, ví dụ, bài tập và deadline.</p></div><span class="step-status">PHÂN TÍCH</span>
+          </article>
+          <article class="workflow-step">
+            <span class="step-no">03</span><div><h3>Đối chiếu rồi giải</h3><p>Dùng tài liệu môn học làm căn cứ; trình bày lời giải theo từng bước.</p></div><span class="step-status">KIỂM TRA</span>
+          </article>
+          <article class="workflow-step">
+            <span class="step-no">04</span><div><h3>Gửi bản nháp Word</h3><p>Bạn đọc, góp ý và xác nhận nội dung trước khi lưu bản cuối.</p></div><span class="step-status">BẠN DUYỆT</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-shell guardrails-section" id="ranh-gioi">
+      <div class="section-heading">
+        <div>
+          <div class="eyebrow">RANH GIỚI NĂNG LỰC</div>
+          <h2>Hỗ trợ có căn cứ,<br><em>không quyết định thay bạn.</em></h2>
+        </div>
+        <p class="section-aside">Những điểm chưa chắc không bị che đi. Agent nêu rõ để bạn kiểm tra.</p>
+      </div>
+      <div class="guardrails-grid">
+        <article class="guardrail-card">
+          <span class="guardrail-symbol safe" aria-hidden="true">✓</span>
+          <h3>Agent sẽ làm</h3>
+          <ul>
+            <li>Chỉ xử lý nội dung liên quan đến học tập.</li>
+            <li>Giữ nguồn và mốc thời gian cho ý quan trọng.</li>
+            <li>Đánh dấu dữ liệu thiếu hoặc nguồn mâu thuẫn.</li>
+            <li>Chờ bạn duyệt trước khi lưu bản cuối.</li>
+          </ul>
+        </article>
+        <article class="guardrail-card guardrail-stop">
+          <span class="guardrail-symbol stop" aria-hidden="true">×</span>
+          <h3>Agent sẽ không</h3>
+          <ul>
+            <li>Tự đoán deadline hay âm thầm chọn nguồn.</li>
+            <li>Sửa hoặc xóa tài liệu gốc.</li>
+            <li>Chia sẻ nội dung với người khác.</li>
+            <li>Lưu Word/PDF cuối trước khi bạn xác nhận.</li>
+          </ul>
+        </article>
+      </div>
+      <div class="approval-banner">
+        <div class="approval-icon" aria-hidden="true">✳</div>
+        <div><strong>Bạn giữ quyền quyết định.</strong><p>Bản Word trước tiên là bản nháp để kiểm tra. Chỉ khi bạn đồng ý, bản cuối mới được đưa tới thư mục lưu trữ.</p></div>
+        <span class="approval-tag">DRAFT → DUYỆT → LƯU</span>
+      </div>
+    </section>
+
+    <section class="closing-cta section-shell">
+      <div class="closing-mark" aria-hidden="true">H</div>
+      <div><div class="eyebrow">BẢN TRƯNG BÀY CÔNG KHAI</div><h2>Xem quy trình. Hiểu giới hạn.</h2><p>Đây là trải nghiệm giới thiệu, không phải cổng để gửi tài liệu cho Agent.</p></div>
+      <a class="button button-dark" href="#top">Lên đầu trang <span aria-hidden="true">↑</span></a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-brand"><span class="brand-mark" aria-hidden="true">H</span><span><strong>HỌC GỌN</strong><small>TRỢ LÝ TỔNG HỢP HỌC TẬP</small></span></div>
+    <p>Demo mô phỏng · Không nhận tệp · Không gọi API · Không lưu dữ liệu</p>
+    <a href="#top">Trở về đầu trang ↑</a>
+  </footer>
+</body>
+</html>
